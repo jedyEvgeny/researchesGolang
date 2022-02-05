@@ -1,0 +1,13 @@
+package main
+
+import ."fmt"
+
+func main() {
+    var c int
+    Scan(&c)
+    switch {
+        case c > 0: Println("Число положительное") 
+        case c < 0: Println("Число отрицательное")
+        default: Println("Ноль")
+    }
+}
