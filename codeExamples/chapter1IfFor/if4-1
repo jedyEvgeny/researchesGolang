@@ -1,0 +1,19 @@
+package main
+import "fmt"
+func main() {
+  var a uint
+  fmt.Scan(&a)
+  b1 := a / 100000
+  b2 := a / 10000 % 10
+  b3 := a / 1000 % 10 
+  b4 := a / 100 % 10
+  b5 := a / 10 % 10
+  b6 := a % 10
+  sumB123 := b1 + b2 + b3
+  sumB456 := b4 + b5 + b6
+  if sumB123 == sumB456 {
+    fmt.Println("YES")
+  } else {
+    fmt.Println("NO")
+  }
+}
