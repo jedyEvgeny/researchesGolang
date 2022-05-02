@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main()  {
+    var d, h, m int
+    fmt.Scan(&d)
+    // 1 градус равен двум минутам
+    h = (d*2)/60
+    m = (d*2)%60
+    fmt.Println("It is", h, "hours", m, "minutes.")
+}
