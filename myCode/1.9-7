@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main()  {
+    var a int
+    fmt.Scan(&a)
+  switch {
+    case a <= 9: a = a
+    case a <= 99: a /= 10  
+    case a <= 999: a /= 100  
+    case a <= 9999: a /= 1000  
+    default: a /= 10000
+  }
+  fmt.Println(a)
+}
