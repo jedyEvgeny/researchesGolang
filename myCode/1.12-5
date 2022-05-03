@@ -1,0 +1,20 @@
+/* package main
+
+import "fmt"
+
+func main() {
+*/
+workArray := [10] uint8 {}
+for i := 0; i < 10; i++ {
+  fmt.Scan(&workArray[i])
+}
+var b1, b2 int
+
+for i := 0; i < 3; i++ {
+fmt.Scan(&b1, &b2)
+workArray[b1], workArray[b2] = workArray[b2], workArray[b1]
+}
+for _, b := range workArray {
+fmt.Print(b," ")
+}
+//}
