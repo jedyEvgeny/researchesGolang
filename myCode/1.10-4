@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func main() {
-  var a, b, summ int
+  var a, summ int
   fmt.Scan(&a)
   for i := 0; i < a; i++ {
+    b := 0
     fmt.Scan(&b)
-    if b % 8 == 0 && b > 9 || b < 100 {
+    if b % 8 == 0 && b > 9 && b < 100 {
       summ += b
     }
   }
