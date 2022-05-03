@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+  var a, b int
+  fmt.Scan(&a, &b)
+  summ := a
+  for a < b {
+    a++
+    summ += a 
+  }
+  fmt.Println(summ)
+}
