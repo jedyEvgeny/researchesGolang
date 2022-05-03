@@ -5,10 +5,12 @@ import "fmt"
 func main() {
   var a, b, c int
   fmt.Scan(&a, &b, &c)
-    for d := 1; a >= d; d++ {
-      if d % b == 0 && d % c != 0 {
+    for d := b; a >= d; d+=c {
+      if d % c != 0 {
         fmt.Println(d)
         break
-      } 
+      } else if d == 10000 {
+        break
+        }
     }
   }
