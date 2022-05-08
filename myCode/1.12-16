@@ -1,0 +1,15 @@
+package main
+import "fmt"
+
+func main()  {
+  var a, b int
+  fmt.Scan(&a)
+  array := make ([] int, a)
+  for i:=0; a > i; i++ {
+    fmt.Scan(&array[i])
+    if array[i] >=0 {
+      b++
+    }
+  }
+      fmt.Print(b)
+}
