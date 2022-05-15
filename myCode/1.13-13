@@ -1,0 +1,14 @@
+package main
+import "fmt"
+import "math"
+func main() {
+  var a, b, c float64
+  fmt.Scan(&a)
+  for b = 0;c < a; b++ {
+    c = math.Pow (2, b)
+    if c > a {
+      break
+    }
+    fmt.Print(c, " ")
+    }
+}
