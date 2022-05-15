@@ -1,0 +1,9 @@
+package main
+import "fmt"
+func main () {
+  var a int
+  fmt.Scan(&a)
+  hour := a/3600
+  minits := (a-hour*3600)/60
+  fmt.Printf("It is %v hours %v minutes.", hour, minits)
+}
