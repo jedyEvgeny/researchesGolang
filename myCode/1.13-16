@@ -1,0 +1,18 @@
+package main
+import "fmt"
+func main() {
+  var a, b int
+  fmt.Scan(&a, &b)
+  var array [] int
+  for a > 0 {//разделяем число на срез
+    if a%10!=b {
+      array = append(array, a%10)
+    } 
+    a/=10
+  }
+  var c int
+  for i:=0; len(array)>i;i++ {//переворачиваем срез и преобразуем его в число
+    c = c*10 + array[len(array)-i-1]
+  }
+  fmt.Println(c)
+  }
