@@ -1,0 +1,13 @@
+package main
+import "fmt"
+func main() {
+  var a, b, c int
+  fmt.Scan(&a)
+  for i := 0; a > i; i++ {
+    fmt.Scan(&b)
+    switch b {
+      case 0: c++
+    }
+  }
+  fmt.Println(c)
+}
