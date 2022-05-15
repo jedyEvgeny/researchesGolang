@@ -1,0 +1,14 @@
+package main
+import "fmt"
+func main () {
+  var a, i, nNext, nFirst int
+  fmt.Scan(&a)
+  for nSecond := 1; a >= nNext; i++ {
+      nNext = nFirst + nSecond
+      nSecond, nFirst = nNext, nSecond
+      }
+  switch {
+    case nFirst == a: fmt.Println(i)
+    default: fmt.Print(-1)
+  }
+}
