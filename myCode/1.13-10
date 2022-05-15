@@ -1,0 +1,16 @@
+package main
+import "fmt"
+
+func main() {
+    var a int
+    fmt.Scan(&a)
+    for a > 9  {
+      summ := 0
+        for a != 0  {
+          summ += a % 10
+          a /= 10
+        }
+      a = summ
+    }
+    fmt.Println(a)
+}
