@@ -1,0 +1,19 @@
+package main
+import "fmt"
+func main() {
+  var a, count int
+  fmt.Scan(&a)
+  array := make([]int,a)
+  for i:=0 ; a > i; i++ {
+    fmt.Scan(&array[i])
+  }
+  min := array[0]
+  for _, el := range array {
+    switch {
+      case min > el: min = el
+      count = 1
+      case min == el: count++
+    }
+  }
+  fmt.Println(count)
+}
