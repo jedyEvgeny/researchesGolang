@@ -1,0 +1,14 @@
+package main
+import "fmt"
+func main(){
+  var a int
+  var b string
+  fmt.Scan(&a)
+  switch {
+    case a>4 && a <21 || a< -4 && a >-21: b = "korov"
+    case a%10 == 1 || a%10 == -1: b = "korova"
+    case a%10 == 2 || a%10 == 3 || a%10 == 4 || a%10 == -2 || a%10 == -3 || a%10 == -4: b = "korovy"
+    default: b = "korov" 
+  }
+  fmt.Println(a, b)
+}
