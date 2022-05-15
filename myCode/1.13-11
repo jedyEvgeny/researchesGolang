@@ -1,0 +1,12 @@
+package main
+import "fmt"
+func main () {
+  var a, b int
+  for fmt.Scan(&a, &b); a != b && b%7 != 0; b-- {
+  }
+  if b%7 == 0 {
+    fmt.Println(b)
+  } else {
+    fmt.Println("NO")
+  }
+}
